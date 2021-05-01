@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="http://127.0.0.1:5000/templates/fav.ico" type="image/x-icon">
+    <title>Covid19</title>
+
+  <style>
+
+
+html {overflow-x:hidden;}
+body {margin:0;padding:0;
+  background-image:url( 'http://127.0.0.1:5000/templates/covid.jpg' );
+  background-repeat:no-repeat;
+  background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+}
+
+
+form{
+    color: blue;
+    right: 300px;
+ position:absolute;
+ top:0; 
+}
+iframe{				
+    width: 100%;
+
+				position:relative;
+				padding:10px;
+			}
+</style>
+
+
+</head>
+
+<body>
+
+    
+    <audio  autoplay loop>
+  <source src="http://127.0.0.1:5000/templates/b.mp3" type="audio/ogg">
+ 
+</audio>
+    <iframe name="j" src="http://127.0.0.1:5000/templates/chart.html"width="100%" height="1000"></iframe>
+    <form action="http://127.0.0.1:5000/templates/pick_country_chart.html"  method="get" target="j" >
+        <label for="Country" >Country</label><br>
+        <input type="text" id="Country" name="Country" value=""><br>
+        <input type="submit" value="Submit">
+          </form>
+       
+         
+</body>
+</html>
